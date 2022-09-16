@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-purple: #262629;
+    --black: #121214;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: var(--black);
+    color: white;
+}
+
+main {
+
+    width: 780px;
+    margin: 32px auto;
+    display: grid;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 32px;
+}
+
+header div {
+    width: 320px;
+    margin: auto;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+    background: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 50%;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+section {
+
+    width: 780px;
+    padding-top: 4px;
+    border-radius: 10px;
+
+
+}
+
+section div {
+    padding: 45px;
+    padding-top: 24px;
+    background-color: var(--dark-purple);
+    border-radius: 10px;
+    width: 90%;
+    margin: 32px;
+
+}
+
+
+
+a img {
+
+    width: 188px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    /* flex-wrap: wrap;*/
+    list-style: none;
+    margin-top: 24px;
+    overflow-x: scroll;
+
+}
+
+ul li {
+    transition: transform .3s;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+li {
+    display: inline-block;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--dark-purple);
+    -webkit-border-radius: 6px;
+}
+
+/*animation */
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .6s;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
