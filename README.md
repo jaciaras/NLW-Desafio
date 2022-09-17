@@ -8,7 +8,7 @@ Projeto final do evento Next Level Week da Rocketseat
 
 ![preview](./.github/preview.png)
 
-> ⛓ [Clique aqui para acessar](https://jaciaras.github.io/NLW)
+> ⛓ [Clique aqui para acessar](https://jaciaras.github.io/NLW-Desafio/)
 
 ## ⚙️ Tecnologias 
 
